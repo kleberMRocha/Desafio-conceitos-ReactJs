@@ -1,0 +1,576 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20201029.210215.18897.0.001.json",
+    "dumpEventTime": "2020-10-29T21:02:15Z",
+    "dumpEventTimeStamp": "1604016135110",
+    "processId": 18897,
+    "threadId": null,
+    "cwd": "/home/kleber/Área de Trabalho/bootcamp-gostack/Nível-01/Desafio-conceitos-reactJs",
+    "commandLine": [
+      "node",
+      "/home/kleber/Área de Trabalho/bootcamp-gostack/Nível-01/Desafio-conceitos-reactJs/node_modules/react-scripts/scripts/test.js",
+      "--watchAll=false",
+      "--testLocationInResults",
+      "--json",
+      "--useStderr",
+      "--outputFile",
+      "/tmp/jest_runner_desafio_conceitos_reactjs.json",
+      "--no-coverage",
+      "--no-color",
+      "--reporters",
+      "default",
+      "--reporters",
+      "/home/kleber/.vscode/extensions/orta.vscode-jest-3.2.0/out/reporter.js"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.4.0-52-generic",
+    "osVersion": "#57~18.04.1-Ubuntu SMP Thu Oct 15 14:04:49 UTC 2020",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz",
+        "speed": 3292,
+        "user": 101458700,
+        "nice": 203500,
+        "sys": 20443200,
+        "idle": 1288079700,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz",
+        "speed": 3292,
+        "user": 100505500,
+        "nice": 217100,
+        "sys": 19332700,
+        "idle": 1289615000,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz",
+        "speed": 3292,
+        "user": 101113700,
+        "nice": 207300,
+        "sys": 19616700,
+        "idle": 1287978000,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz",
+        "speed": 3292,
+        "user": 100633200,
+        "nice": 217500,
+        "sys": 19239900,
+        "idle": 1289748600,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "enp2s0",
+        "internal": false,
+        "mac": "8c:89:a5:b7:31:ee",
+        "address": "192.168.0.14",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "enp2s0",
+        "internal": false,
+        "mac": "8c:89:a5:b7:31:ee",
+        "address": "2804:14c:bf2f:8444:9c4d:a383:a8d2:a4a",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "enp2s0",
+        "internal": false,
+        "mac": "8c:89:a5:b7:31:ee",
+        "address": "fe80::9742:3c2:8965:3a07",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      }
+    ],
+    "host": "kleber-MS-7788"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b46955",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [node]"
+    },
+    {
+      "pc": "0x0000000000a09c8f",
+      "symbol": "node::OnFatalError(char const*, char const*) [node]"
+    },
+    {
+      "pc": "0x0000000000b7d71e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000b7da99",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000d2a1f5",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000d2a886",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [node]"
+    },
+    {
+      "pc": "0x0000000000d37105",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000d37fb5",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000d3aa6c",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [node]"
+    },
+    {
+      "pc": "0x0000000000d0163b",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [node]"
+    },
+    {
+      "pc": "0x000000000104300e",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x00000000013c5b79",
+      "symbol": " [node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2150629376,
+    "totalCommittedMemory": 2149271360,
+    "usedMemory": 2144092320,
+    "availableMemory": 49239288,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33088,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 1093368,
+        "capacity": 1047456,
+        "used": 43920,
+        "available": 1003536
+      },
+      "old_space": {
+        "memorySize": 2107252736,
+        "committedMemory": 2107224728,
+        "capacity": 2104283728,
+        "used": 2104281352,
+        "available": 2376
+      },
+      "code_space": {
+        "memorySize": 1216512,
+        "committedMemory": 1119616,
+        "capacity": 921984,
+        "used": 921984,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2363392,
+        "committedMemory": 2363120,
+        "capacity": 1441520,
+        "used": 1441520,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 37388288,
+        "committedMemory": 37388288,
+        "capacity": 37367952,
+        "used": 37367952,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1125.39,
+    "kernelCpuSeconds": 7.82788,
+    "cpuConsumptionPercent": 111.209,
+    "maxRss": 2308923392,
+    "pageFaults": {
+      "IORequired": 100,
+      "IONotRequired": 1204593
+    },
+    "fsActivity": {
+      "reads": 21576,
+      "writes": 8
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 935.073,
+    "kernelCpuSeconds": 4.40119,
+    "cpuConsumptionPercent": 92.1957,
+    "fsActivity": {
+      "reads": 20168,
+      "writes": 8
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_ham_it_up": "",
+    "SPACESHIP_ROOT": "/home/kleber/.oh-my-zsh/custom/themes/spaceship-prompt",
+    "npm_config_legacy_bundling": "",
+    "npm_config_sign_git_tag": "",
+    "USER": "kleber",
+    "LANGUAGE": "pt_BR:pt:en",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"pt-br\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "npm_package_devDependencies__testing_library_jest_dom": "^5.3.0",
+    "npm_config_user_agent": "npm/6.14.5 node/v12.16.3 linux x64 ci/custom",
+    "npm_config_always_auth": "",
+    "XDG_SEAT": "seat0",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "CI": "true",
+    "npm_package_devDependencies__testing_library_user_event": "^7.1.2",
+    "npm_config_bin_links": "true",
+    "npm_config_key": "",
+    "XDG_SESSION_TYPE": "x11",
+    "SSH_AGENT_PID": "1331",
+    "npm_config_allow_same_version": "",
+    "npm_config_description": "true",
+    "npm_config_fetch_retries": "2",
+    "npm_config_heading": "npm",
+    "npm_config_if_present": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_user": "",
+    "npm_node_execpath": "/usr/local/bin/node",
+    "SHLVL": "0",
+    "VSCODE_LOG_STACK": "false",
+    "npm_config_prefer_online": "",
+    "npm_config_noproxy": "",
+    "HOME": "/home/kleber",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "OLDPWD": "/home/kleber",
+    "LESS": "-R",
+    "npm_package_browserslist_production_0": ">0.2%",
+    "npm_config_force": "",
+    "DESKTOP_SESSION": "xfce",
+    "npm_package_browserslist_production_1": "not dead",
+    "npm_config_only": "",
+    "npm_config_read_only": "",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/usr/share/applications/code.desktop",
+    "VSCODE_IPC_HOOK": "/run/user/1000/vscode-0a3e7622-1.50.1-main.sock",
+    "ZSH": "/home/kleber/.oh-my-zsh",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "npm_package_dependencies_axios_mock_adapter": "^1.18.1",
+    "npm_package_browserslist_production_2": "not op_mini all",
+    "npm_config_cache_min": "10",
+    "npm_config_init_license": "ISC",
+    "GTK_MODULES": "gail:atk-bridge",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "VSCODE_LOGS": "/home/kleber/.config/Code/logs/20201029T193619",
+    "PAGER": "less",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "npm_config_editor": "vi",
+    "npm_config_rollback": "true",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_timing": "",
+    "npm_config_userconfig": "/home/kleber/.npmrc",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "npm_config_engine_strict": "",
+    "npm_config_init_author_name": "",
+    "npm_config_init_author_url": "",
+    "npm_config_preid": "",
+    "npm_config_tmp": "/tmp",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "7262",
+    "PIPE_LOGGING": "true",
+    "npm_package_dependencies_react_scripts": "3.4.1",
+    "npm_config_depth": "Infinity",
+    "npm_config_package_lock_only": "",
+    "npm_config_save_dev": "",
+    "npm_config_usage": "",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_cafile": "",
+    "npm_config_otp": "",
+    "npm_config_package_lock": "true",
+    "npm_config_progress": "",
+    "npm_config_https_proxy": "",
+    "npm_config_save_prod": "",
+    "MANDATORY_PATH": "/usr/share/gconf/xfce.mandatory.path",
+    "QT_QPA_PLATFORMTHEME": "qt5ct",
+    "npm_config_audit": "true",
+    "npm_config_cidr": "",
+    "npm_config_onload_script": "",
+    "npm_config_sso_type": "oauth",
+    "LOGNAME": "kleber",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_save_bundle": "",
+    "npm_config_shell": "/bin/zsh",
+    "_": "/usr/share/code/code",
+    "npm_package_private": "true",
+    "npm_config_dry_run": "",
+    "npm_config_format_package_lock": "true",
+    "npm_config_prefix": "/usr/local",
+    "DEFAULTS_PATH": "/usr/share/gconf/xfce.default.path",
+    "npm_config_scope": "",
+    "npm_config_browser": "",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_save_optional": "",
+    "npm_config_searchopts": "",
+    "npm_config_versions": "",
+    "XDG_SESSION_ID": "c1",
+    "CLUTTER_BACKEND": "x11",
+    "npm_config_cache": "/home/kleber/.npm",
+    "npm_config_proxy": "",
+    "npm_config_send_metrics": "",
+    "npm_package_scripts_start": "react-scripts start",
+    "npm_config_global_style": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_version": "",
+    "npm_package_dependencies_axios": "^0.19.2",
+    "npm_package_browserslist_development_0": "last 1 chrome version",
+    "npm_config_local_address": "",
+    "npm_config_viewer": "man",
+    "npm_config_node_gyp": "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "PATH": "/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/kleber/Área de Trabalho/bootcamp-gostack/Nível-01/Desafio-conceitos-reactJs/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "GDM_LANG": "pt_BR",
+    "SESSION_MANAGER": "local/kleber-MS-7788:@/tmp/.ICE-unix/1240,unix/kleber-MS-7788:/tmp/.ICE-unix/1240",
+    "npm_package_name": "frontend",
+    "npm_package_browserslist_development_1": "last 1 firefox version",
+    "npm_config_audit_level": "low",
+    "npm_config_prefer_offline": "",
+    "NODE": "/usr/local/bin/node",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session0",
+    "XDG_MENU_PREFIX": "xfce-",
+    "VSCODE_NODE_CACHED_DATA_DIR": "/home/kleber/.config/Code/CachedData/d2e414d9e4239a252d1ab117bd7067f125afd80a",
+    "npm_package_browserslist_development_2": "last 1 safari version",
+    "npm_config_color": "true",
+    "npm_config_sign_git_commit": "",
+    "DISPLAY": ":0.0",
+    "npm_package_scripts_eject": "react-scripts eject",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_maxsockets": "50",
+    "npm_config_offline": "",
+    "npm_config_sso_poll_frequency": "500",
+    "LANG": "pt_BR.UTF-8",
+    "XDG_CURRENT_DESKTOP": "XFCE",
+    "npm_package_dependencies_react_dom": "^16.13.1",
+    "npm_config_umask": "0002",
+    "XDG_SESSION_DESKTOP": "xfce",
+    "XAUTHORITY": "/home/kleber/.Xauthority",
+    "LS_COLORS": "",
+    "npm_package_gitHead": "126043b25da152fbb3fb6d141bbc2b14816d236b",
+    "npm_config_fund": "true",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_loglevel": "notice",
+    "npm_config_logs_max": "10",
+    "npm_config_message": "%s",
+    "npm_lifecycle_script": "react-scripts test --watchAll=false \"--testLocationInResults\" \"--json\" \"--useStderr\" \"--outputFile\" \"/tmp/jest_runner_desafio_conceitos_reactjs.json\" \"--no-coverage\" \"--no-color\" \"--reporters\" \"default\" \"--reporters\" \"/home/kleber/.vscode/extensions/orta.vscode-jest-3.2.0/out/reporter.js\"",
+    "XDG_GREETER_DATA_DIR": "/var/lib/lightdm-data/kleber",
+    "SSH_AUTH_SOCK": "/tmp/ssh-6s4gse2sRKTZ/agent.1240",
+    "GSETTINGS_SCHEMA_DIR": "/home/kleber/data",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "XFCE",
+    "npm_package_scripts_test": "react-scripts test --watchAll=false \"--testLocationInResults\" \"--json\" \"--useStderr\" \"--outputFile\" \"/tmp/jest_runner_desafio_conceitos_reactjs.json\" \"--no-coverage\" \"--no-color\" \"--reporters\" \"default\" \"--reporters\" \"/home/kleber/.vscode/extensions/orta.vscode-jest-3.2.0/out/reporter.js\"",
+    "npm_config_ca": "",
+    "npm_config_cert": "",
+    "npm_config_global": "",
+    "npm_config_link": "",
+    "SHELL": "/bin/zsh",
+    "npm_package_version": "0.1.0",
+    "npm_package_devDependencies__testing_library_react": "^10.0.2",
+    "npm_config_access": "",
+    "npm_config_also": "",
+    "npm_config_save": "true",
+    "npm_config_unicode": "true",
+    "npm_lifecycle_event": "test",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "QT_ACCESSIBILITY": "1",
+    "GDMSESSION": "xfce",
+    "VERBOSE_LOGGING": "true",
+    "npm_package_scripts_build": "react-scripts build",
+    "npm_config_argv": "{\"remain\":[\"--testLocationInResults\",\"--json\",\"--useStderr\",\"--outputFile\",\"/tmp/jest_runner_desafio_conceitos_reactjs.json\",\"--no-coverage\",\"--no-color\",\"--reporters\",\"default\",\"--reporters\",\"/home/kleber/.vscode/extensions/orta.vscode-jest-3.2.0/out/reporter.js\"],\"cooked\":[\"test\",\"--\",\"--testLocationInResults\",\"--json\",\"--useStderr\",\"--outputFile\",\"/tmp/jest_runner_desafio_conceitos_reactjs.json\",\"--no-coverage\",\"--no-color\",\"--reporters\",\"default\",\"--reporters\",\"/home/kleber/.vscode/extensions/orta.vscode-jest-3.2.0/out/reporter.js\"],\"original\":[\"test\",\"--\",\"--testLocationInResults\",\"--json\",\"--useStderr\",\"--outputFile\",\"/tmp/jest_runner_desafio_conceitos_reactjs.json\",\"--no-coverage\",\"--no-color\",\"--reporters\",\"default\",\"--reporters\",\"/home/kleber/.vscode/extensions/orta.vscode-jest-3.2.0/out/reporter.js\"]}",
+    "npm_config_before": "",
+    "npm_config_long": "",
+    "npm_config_production": "",
+    "npm_config_searchlimit": "20",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_update_notifier": "true",
+    "npm_config_auth_type": "legacy",
+    "npm_config_node_version": "12.16.3",
+    "npm_config_tag": "latest",
+    "npm_config_git_tag_version": "true",
+    "npm_config_commit_hooks": "true",
+    "npm_config_script_shell": "",
+    "npm_config_shrinkwrap": "true",
+    "CRASH_REPORTER_START_OPTIONS": "{\"companyName\":\"Microsoft\",\"productName\":\"VSCode\",\"submitURL\":\"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=9c8c4a57-e5e5-4469-9b4d-671d963d1815&iid=9c8c4a57-e5e5-4469-9b4d-671d963d1815&sid=9c8c4a57-e5e5-4469-9b4d-671d963d1815\",\"uploadToServer\":true}",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_save_exact": "",
+    "npm_config_strict_ssl": "true",
+    "XDG_VTNR": "7",
+    "SPACESHIP_VERSION": "3.11.2",
+    "npm_config_dev": "",
+    "npm_config_globalconfig": "/usr/local/etc/npmrc",
+    "npm_config_init_module": "/home/kleber/.npm-init.js",
+    "npm_config_parseable": "",
+    "PWD": "/home/kleber/Área de Trabalho/bootcamp-gostack/Nível-01/Desafio-conceitos-reactJs",
+    "npm_config_globalignorefile": "/usr/local/etc/npmignore",
+    "npm_execpath": "/usr/local/lib/node_modules/npm/bin/npm-cli.js",
+    "XDG_DATA_DIRS": "/usr/share/xfce4:/home/kleber/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-xfce:/etc/xdg:/etc/xdg",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_searchstaleness": "900",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "npm_config_node_options": "",
+    "npm_config_save_prefix": "^",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "BREAKPAD_DUMP_LOCATION": "/home/kleber/.config/Code/exthost Crash Reports",
+    "npm_config_group": "1000",
+    "npm_config_init_author_email": "",
+    "npm_config_searchexclude": "",
+    "npm_config_git": "git",
+    "npm_config_optional": "true",
+    "VSCODE_PID": "7262",
+    "VSCODE_IPC_HOOK_EXTHOST": "/run/user/1000/vscode-ipc-99f4936e-2da9-497c-ae99-a5214100b8bd.sock",
+    "npm_package_dependencies_react": "^16.13.1",
+    "npm_config_json": "",
+    "INIT_CWD": "/home/kleber/Área de Trabalho/bootcamp-gostack/Nível-01/Desafio-conceitos-reactJs",
+    "BABEL_ENV": "test",
+    "NODE_ENV": "test",
+    "PUBLIC_URL": "",
+    "NODE_PATH": "",
+    "JEST_WORKER_ID": "1"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 16777216,
+      "hard": 16777216
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 31127,
+      "hard": 31127
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
